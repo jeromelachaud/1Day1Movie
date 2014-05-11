@@ -35,7 +35,7 @@
 		echo ("id : ".$returnedID."");
 	}
 
-else die ('Le formulaire ne doit pas être vide');
+else die ('Form must not be empty');
 
 // Encode the input
 $title = urlencode($title);
