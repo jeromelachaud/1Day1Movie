@@ -21,17 +21,18 @@
 		$data = curl_exec($curl);
 		curl_close($curl);
 		$json = json_decode($data, true);
-		// echo ('<pre>');
-		// print_r($json);
-		// echo ('</pre>');
-		//	die();
-		echo "<ul>";
+		//echo '<form action="index.php" method="post">';
 		foreach($json['Search'] as $search) {
-    		echo '<li>Title: ' . $search['Title'] . '</li>';
-    		echo '<li>ID: ' . $search['imdbID'] . '</li>';
+    		echo '<ul>';
+    		echo '<li><label for="id">Title</label><input type="text" name="title" id="title" value="' . $search['Title'] . '"/></li>';
+    		echo '<li><label for="id">ID</label><input type="text" name="id" id="id" value="' . $search['imdbID'] . '"/></li>';
+    		echo '<li><label for="year">Year</label><input type="text" name="year" id="year" value="' . $search['Year'] . '"/></li>';
+    			if (getPoster($search['imdbID']) == 'N/A') {
+    				echo '<img src="http://placekitten.com/300/450" />';
+    			}
+	      		else echo '<img src="'.getPoster($search['imdbID']).'" />';
+    		echo '</ul>';
 		}
-		echo "</ul>";
-		// return $json->{'Title'};
 	}
 
 	// function getID($imdbTitle) {
