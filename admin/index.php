@@ -1,5 +1,4 @@
-<?php $auth = 1;
-
+<?php
 include "../includes.php";
 include '../partials/header-admin.php';
 ?>

@@ -13,6 +13,7 @@
 			<br/>
 			<datetime><?= $movie['date_fr']; ?></datetime>
 		</a>
+
 	<? unset($movie); endforeach; ?>
 
 </div>

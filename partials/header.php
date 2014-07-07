@@ -9,7 +9,7 @@
     <meta name="author" content="Jerome Lachaud">
     <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/simplex/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo(WEBROOT) ?>css/style.css">
+    <link rel="stylesheet" href="<?= (WEBROOT) ?>css/style.css">
 </head>
 <body>
     <div class="navbar navbar-default">
@@ -25,8 +25,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="../index.php">Home</a></li>
-                    <li><a href="../admin/login.php">Login</a></li>
+                    <li class="active"><a href="<?= (WEBROOT) ?>index.php">Home</a></li>
+                    <li><a href="<?= (WEBROOT) ?>admin/index.php">Admin</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
