@@ -1,0 +1,30 @@
+/*------------------------------------*\
+ Typo
+\*------------------------------------*/
+
+h2 {
+  max-height: 33px;
+  overflow: hidden; }
+
+
+/*------------------------------------*\
+ Display Movies
+\*------------------------------------*/
+
+.movie-link {
+  display: block;
+  text-align: center; }
+
+a.movie-link:hover {
+  text-decoration: none; }
+
+
+/*------------------------------------*\
+ Authentication
+\*------------------------------------*/
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
